@@ -2,11 +2,11 @@ name: Destroy infra (Lab 1)
 
 on:
   workflow_dispatch:
-  inputs:
-    student_suffix:
-      description: 'Student Suffix (e.g. test-student)'
-      required: false
-      type: string
+    inputs:
+      student_suffix:
+        description: 'Student Suffix (e.g. test-student)'
+        required: false
+        type: string
 
 env:
   AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
